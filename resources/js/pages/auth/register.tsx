@@ -14,6 +14,7 @@ type RegisterForm = {
     email: string;
     password: string;
     password_confirmation: string;
+    id_region: string;
 };
 
 export default function Register() {
@@ -22,6 +23,7 @@ export default function Register() {
         email: '',
         password: '',
         password_confirmation: '',
+        id_region: '',
     });
 
     const submit: FormEventHandler = (e) => {
@@ -67,6 +69,22 @@ export default function Register() {
                             placeholder="email@example.com"
                         />
                         <InputError message={errors.email} />
+                    </div>
+
+                    <div className="grid gap-2">
+                        <Label htmlFor="id_region">CPF/CNPJ</Label>
+                        <Input
+                            id="id_region"
+                            type="text"
+                            required
+                            tabIndex={2}
+                            autoComplete="id_region"
+                            value={data.id_region}
+                            onChange={(e) => setData('id_region', e.target.value)}
+                            disabled={processing}
+                            placeholder="000.000.000-00"
+                        />
+                        <InputError message={errors.id_region} />
                     </div>
 
                     <div className="grid gap-2">
