@@ -68,6 +68,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
     *,
     ::after,
     ::before,
@@ -147,6 +148,14 @@
     --sidebar-border: oklch(0.269 0 0);
     --sidebar-ring: oklch(0.439 0 0);
 }
+
+
+.dark *:data-[slot=card] {
+    background-color: var(--color-card);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, var(--color-card));
+}
+
+
 
 @layer base {
     * {

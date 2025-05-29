@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "type": "transfer_out",
+    "description": "Transferência PIX",
+    "recipient": "João Silva",
+    "amount": -150.0,
+    "date": "2024-01-15T14:30:00Z",
+    "status": "completed",
+    "category": "transfer"
+  },
+  {
+    "id": 2,
+    "type": "deposit",
+    "description": "Salário",
+    "recipient": "Empresa XYZ Ltda",
+    "amount": 5500.0,
+    "date": "2024-01-15T09:00:00Z",
+    "status": "completed",
+    "category": "income"
+  },
+  {
+    "id": 3,
+    "type": "payment",
+    "description": "Supermercado Extra",
+    "recipient": "Extra Supermercados",
+    "amount": -89.5,
+    "date": "2024-01-14T18:45:00Z",
+    "status": "completed",
+    "category": "food"
+  },
+  {
+    "id": 4,
+    "type": "transfer_in",
+    "description": "Transferência recebida",
+    "recipient": "Maria Santos",
+    "amount": 200.0,
+    "date": "2024-01-14T16:20:00Z",
+    "status": "completed",
+    "category": "transfer"
+  },
+  {
+    "id": 5,
+    "type": "payment",
+    "description": "Netflix",
+    "recipient": "Netflix Brasil",
+    "amount": -29.9,
+    "date": "2024-01-14T12:00:00Z",
+    "status": "completed",
+    "category": "entertainment"
+  },
+  {
+    "id": 6,
+    "type": "payment",
+    "description": "Uber",
+    "recipient": "Uber do Brasil",
+    "amount": -18.5,
+    "date": "2024-01-13T22:15:00Z",
+    "status": "completed",
+    "category": "transport"
+  },
+  {
+    "id": 7,
+    "type": "payment",
+    "description": "Farmácia Drogasil",
+    "recipient": "Drogasil",
+    "amount": -45.8,
+    "date": "2024-01-13T15:30:00Z",
+    "status": "completed",
+    "category": "health"
+  },
+  {
+    "id": 8,
+    "type": "transfer_out",
+    "description": "Transferência PIX",
+    "recipient": "Ana Costa",
+    "amount": -75.0,
+    "date": "2024-01-13T11:45:00Z",
+    "status": "completed",
+    "category": "transfer"
+  },
+  {
+    "id": 9,
+    "type": "payment",
+    "description": "Conta de Luz",
+    "recipient": "Enel Distribuição",
+    "amount": -125.4,
+    "date": "2024-01-12T14:20:00Z",
+    "status": "completed",
+    "category": "utilities"
+  },
+  {
+    "id": 10,
+    "type": "cashback",
+    "description": "Cashback Cartão",
+    "recipient": "NuBank",
+    "amount": 12.5,
+    "date": "2024-01-12T10:00:00Z",
+    "status": "completed",
+    "category": "cashback"
+  }
+]
