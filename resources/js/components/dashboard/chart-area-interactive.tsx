@@ -50,8 +50,7 @@ const chartConfig = {
 } satisfies ChartConfig
 
 export function ChartAreaInteractive() {
-  const isMobile = useIsMobile()
-  const [timeRange, setTimeRange] = React.useState("7d")
+  const [timeRange] = React.useState("7d")
   const [chartType, setChartType] = React.useState("area")
 
   const filteredData = spendingData.filter((item, index) => {

@@ -174,7 +174,7 @@ const columns: ColumnDef<z.infer<typeof transactionSchema>>[] = [
   },
   {
     id: "actions",
-    cell: ({ row }) => (
+    cell: ({ }) => (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" className="flex size-8 text-muted-foreground data-[state=open]:bg-muted" size="icon">
