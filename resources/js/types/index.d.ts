@@ -41,3 +41,23 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface Transaction {
+    id: number;
+    type: string;
+    description: string;
+    recipient: string;
+    amount: number;
+    date: string;
+    status: string;
+    category: string;
+};
+
+export interface Account {
+    id: number;
+    balance: number;
+    credit_limit: number;
+};
+
+// types.ts
+export type PageProps<T = unknown> = SharedData & T;
