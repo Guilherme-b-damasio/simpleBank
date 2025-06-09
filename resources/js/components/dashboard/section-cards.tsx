@@ -6,8 +6,14 @@ import { useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Account, User } from "@/types"
 
-export function SectionCards() {
+type Props = {
+  account: Account;
+  user: User;
+};
+export function SectionCards({ user, account }: Props) {
+
   const [showBalance, setShowBalance] = useState(true)
 
   return (
@@ -34,7 +40,7 @@ export function SectionCards() {
             </Button>
           </CardDescription>
           <CardTitle className="@[250px]/card:text-4xl text-3xl font-bold tabular-nums text-purple-600 dark:text-white">
-            {showBalance ? "R$ 8.547,32" : "R$ ••••••"}
+            {showBalance ? "R$" + account.balance : "R$ ••••••"}
           </CardTitle>
           <div className="absolute right-4 top-4">
             <Badge
@@ -56,7 +62,7 @@ export function SectionCards() {
         <CardHeader className="relative">
           <CardDescription>Cartão de Crédito</CardDescription>
           <CardTitle className="@[250px]/card:text-2xl text-xl font-semibold tabular-nums">
-            {showBalance ? "R$ 2.450,00" : "R$ ••••••"}
+            {showBalance ? "R$ " + account.credit_limit : "R$ ••••••"}
           </CardTitle>
           <div className="absolute right-4 top-4">
             <CreditCardIcon className="h-5 w-5 text-purple-600" />
